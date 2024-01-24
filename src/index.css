@@ -1,7 +1,7 @@
 :root {
   font-family: "Rubik", sans-serif;
   line-height: normal;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 *,
@@ -18,33 +18,172 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  line-height: normal;
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+}
+
+.wrapper {
+  background-color: #0e1323;
+  color: #fff;
+  width: 37.5rem;
+  padding: 8.1rem 2.4rem 8.1rem 2.4rem;
+  display: grid;
+  gap: 2.4rem;
 }
 
 .user__card {
-  background-color: rgb(255, 238, 0);
+}
+
+.user__details {
+  background-color: #5747ea;
+  border-radius: 1.5rem;
+  height: 13.3rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3.5rem 4.1rem 3.5rem 2.5rem;
+}
+
+.user__img {
+  height: 6.4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.user__text-box {
+}
+
+.user__report {
+  font-size: 1.5rem;
+  color: #bbc0ff;
+}
+
+.user__name {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.user__timeframes-box {
+  background-color: #1c204b;
+  padding-bottom: 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.btn__box {
+  display: flex;
+  padding-top: 2.4rem;
+  justify-content: space-evenly;
+  gap: 2.6rem;
+}
+
+.timeframes__btn {
+  color: #7078c9;
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.timeframes__btn:hover,
+.timeframes__btn:active,
+.timeframes__btn:visited {
+  color: #fff;
+}
+
+.card__color-wrapper {
+  padding-top: 4.5rem;
+  border-radius: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-y: -5%;
+  background-position-x: 95%;
+}
+
+.card__color-wrapper--1 {
+  background-color: #ff8b64;
+  background-image: url(../public/images/icon-work.svg);
+}
+
+.card__color-wrapper--2 {
+  background-color: #55c2e6;
+  background-image: url(../public/images/icon-play.svg);
+}
+
+.card__color-wrapper--3 {
+  background-color: #ff5e7d;
+  background-image: url(../public/images/icon-study.svg);
+}
+
+.card__color-wrapper--4 {
+  background-color: #4bcf82;
+  background-image: url(../public/images/icon-exercise.svg);
+}
+
+.card__color-wrapper--5 {
+  background-color: #7335d2;
+  background-image: url(../public/images/icon-social.svg);
+}
+
+.card__color-wrapper--6 {
+  background-color: #f1c75b;
+  background-image: url(../public/images/icon-self-care.svg);
+}
+
+.card__box {
+  background-color: #1c204b;
+  border-radius: 1.5rem;
+  height: 12.2rem;
+  padding: 2.8rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__title {
+}
+
+.card__dots {
+  height: min-content;
+}
+
+.card__hours-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__hours--main {
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.card__hours--previous {
+  color: #bbc0ff;
+  font-size: 1.5rem;
 }
 
 .card__box--1 {
-  background-color: aqua;
 }
 
 .card__box--2 {
-  background-color: rgb(0, 34, 255);
 }
 
 .card__box--3 {
-  background-color: rgb(60, 255, 0);
 }
 
 .card__box--4 {
-  background-color: rgb(140, 0, 255);
 }
 
 .card__box--5 {
-  background-color: rgb(255, 0, 132);
 }
 
 .card__box--6 {
-  background-color: rgb(255, 136, 0);
 }

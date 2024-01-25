@@ -33,9 +33,6 @@ body {
   gap: 2.4rem;
 }
 
-.user__card {
-}
-
 .user__details {
   background-color: #5747ea;
   border-radius: 1.5rem;
@@ -51,9 +48,6 @@ body {
   height: 6.4rem;
   border-radius: 50%;
   border: 3px solid #fff;
-}
-
-.user__text-box {
 }
 
 .user__report {
@@ -84,6 +78,7 @@ body {
   background-color: transparent;
   border: none;
   font-size: 1.8rem;
+  transition: all 0.2s;
 }
 
 .timeframes__btn:hover,
@@ -147,9 +142,6 @@ body {
   align-items: center;
 }
 
-.card__title {
-}
-
 .card__dots {
   height: min-content;
 }
@@ -170,20 +162,81 @@ body {
   font-size: 1.5rem;
 }
 
-.card__box--1 {
-}
+@media screen and (min-width: 90em) {
+  .wrapper {
+    width: 144rem;
+    height: 100vh;
+    padding: 0;
+    display: grid;
+    place-content: center;
 
-.card__box--2 {
-}
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: repeat(4, max-content);
+    gap: 3rem;
+  }
 
-.card__box--3 {
-}
+  .user__card {
+    grid-row: 1 / -1;
+    width: 25.5rem;
+  }
 
-.card__box--4 {
-}
+  .user__details {
+    height: 35.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.7rem 8.5rem 8rem 3.2rem;
+    z-index: 1000;
+    display: inline-block;
+  }
 
-.card__box--5 {
-}
+  .user__img {
+    height: 8rem;
+    margin-bottom: 3.15rem;
+  }
 
-.card__box--6 {
+  .user__name {
+    font-size: 4rem;
+  }
+
+  .user__timeframes-box {
+    padding-bottom: 2.5rem;
+    height: 16.4rem;
+  }
+
+  .btn__box {
+    background-color: #1c204b;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    padding-top: 0rem;
+    padding: 5.6rem 2.6rem 3.3rem 3.2rem;
+    margin-top: -3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.1rem;
+    z-index: 1;
+  }
+
+  .card__box {
+    height: 19.9rem;
+    width: 25.5rem;
+    padding: 2.9rem 3rem 3.2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .title__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card__hours-box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .card__hours--main {
+    font-size: 5.6rem;
+  }
 }

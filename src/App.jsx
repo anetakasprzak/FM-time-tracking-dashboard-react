@@ -65,14 +65,14 @@ function ActivityCard({ el, i, filter }) {
         </div>
         <div className="card__hours-box">
           <h2 className="card__hours--main">
-            {isDaily && `${el.timeframes.daily.current} hrs`}
-            {isWeekly && `${el.timeframes.weekly.current} hrs`}
-            {isMonthly && `${el.timeframes.monthly.current} hrs`}
+            {isDaily && `${el.timeframes.daily.current}hrs`}
+            {isWeekly && `${el.timeframes.weekly.current}hrs`}
+            {isMonthly && `${el.timeframes.monthly.current}hrs`}
           </h2>
           <p className="card__hours--previous">
-            {isDaily && `Yesterday - ${el.timeframes.daily.previous} hrs`}
-            {isWeekly && `Last week - ${el.timeframes.weekly.previous} hrs`}
-            {isMonthly && `Last month - ${el.timeframes.monthly.previous} hrs`}
+            {isDaily && `Yesterday - ${el.timeframes.daily.previous}hrs`}
+            {isWeekly && `Last week - ${el.timeframes.weekly.previous}hrs`}
+            {isMonthly && `Last month - ${el.timeframes.monthly.previous}hrs`}
           </p>
         </div>
       </div>

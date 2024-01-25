@@ -7,43 +7,47 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div className="user__card">
-        <div className="user__timeframes-box">
-          <div className="user__details">
-            <img
-              className="user__img"
-              src="../public/images/image-jeremy.png"
-            />
-            <div className="user__text-box">
-              <p className="user__report">Report for</p>
-              <p className="user__name">Jeremy Robson</p>
-            </div>
-          </div>
-          <div className="btn__box">
-            <button
-              onClick={() => setFilter("daily")}
-              className="timeframes__btn"
-            >
-              Daily
-            </button>
-            <button
-              onClick={() => setFilter("weekly")}
-              className="timeframes__btn"
-            >
-              Weekly
-            </button>
-            <button
-              onClick={() => setFilter("monthly")}
-              className="timeframes__btn"
-            >
-              Monthly
-            </button>
-          </div>
-        </div>
-      </div>
+      <UserCard setFilter={setFilter} />
+
       {data?.map((el, i) => (
         <ActivityCard i={i} key={el.title} el={el} filter={filter} />
       ))}
+    </div>
+  );
+}
+
+function UserCard({ setFilter }) {
+  return (
+    <div className="user__card">
+      <div className="user__timeframes-box">
+        <div className="user__details">
+          <img className="user__img" src="../public/images/image-jeremy.png" />
+          <div className="user__text-box">
+            <p className="user__report">Report for</p>
+            <p className="user__name">Jeremy Robson</p>
+          </div>
+        </div>
+        <div className="btn__box">
+          <button
+            onClick={() => setFilter("daily")}
+            className="timeframes__btn"
+          >
+            Daily
+          </button>
+          <button
+            onClick={() => setFilter("weekly")}
+            className="timeframes__btn"
+          >
+            Weekly
+          </button>
+          <button
+            onClick={() => setFilter("monthly")}
+            className="timeframes__btn"
+          >
+            Monthly
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
